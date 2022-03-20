@@ -11,8 +11,8 @@
 }
 
 .top img{  
-  max-width: 100%;
-}
+  width: 100%;
+  }
 
 .genre .icon{
     width: 13px;
@@ -41,8 +41,7 @@
     width: 15px;
     height: 15px;
     background-image: url(../../public/img/icons/star.svg);
-    background-repeat: no-repeat;  
-    
+    background-repeat: no-repeat;    
     margin-right: 2px;   
 }
 
@@ -52,7 +51,6 @@
     background-image: url(../../public/img/icons/facebook.svg);
     background-size: 100%; 
     margin-right: 20px;
-          
 }
 
 .note{

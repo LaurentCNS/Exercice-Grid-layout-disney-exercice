@@ -503,7 +503,6 @@ body {
 }
 
 main {
-  width: 1030px;
   width: 100%;
   display: flex;
 }
@@ -560,22 +559,29 @@ textarea, input {
 
 textarea {
   width: 400px;
-  height: 30px;
+  height: 32px;
   resize: none;
   box-sizing: border-box;
   padding: 0%;
   position: relative;
   border: 1px solid #BDBCBC;
   border-right: none;
+  outline: none;
 }
 
 input {
   margin-left: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0;
   position: absolute;
   border: 1px solid #BDBCBC;
   border-left: none;
+  background-image: url(../../public/img/icons/search.png);
+  background-repeat: no-repeat;
+  background-position: 8px;
+  width: 34px;
+  font-display: none;
+  font-size: 0;
 }
 
 .search {
@@ -604,7 +610,7 @@ header p {
 }
 
 .top img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .genre .icon {
