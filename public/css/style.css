@@ -514,6 +514,13 @@ main {
   margin-right: auto;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -602,7 +609,6 @@ header p {
   background-color: white;
   box-shadow: 0px 0px 5px #BDBCBC;
   border-radius: 2%;
-  margin-bottom: 23px;
 }
 
 .top {
@@ -663,6 +669,38 @@ header p {
   height: 20px;
   display: flex;
   align-items: center;
+}
+
+.size1 {
+  height: 366px;
+  grid-row: span 9;
+}
+
+.size2 {
+  height: 455px;
+  grid-row: span 11;
+}
+
+.size3 {
+  height: 530px;
+  grid-row: span 13;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.loader img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.loader p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,6 @@
     background-color: white;     
     box-shadow: 0px 0px 5px $lightgrey;  
     border-radius: 2%;
-    margin-bottom: 23px;
 }
 
 .top{
@@ -64,4 +63,19 @@
     height: 20px;
     display: flex;
     align-items: center;
+}
+
+.size1 {
+    height: 366px;
+    grid-row: span 9;
+}
+
+.size2 {
+    height: 455px;
+    grid-row: span 11;
+}
+
+.size3 {
+    height: 530px;
+    grid-row: span 13;
 }
