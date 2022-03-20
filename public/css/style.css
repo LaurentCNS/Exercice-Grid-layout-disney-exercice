@@ -496,6 +496,10 @@ body {
   line-height: 15px;
 }
 
+.container-flex {
+  display: flex;
+}
+
 #menu .container-flex {
   display: flex;
   flex-wrap: wrap;
@@ -544,6 +548,11 @@ header .container-flex {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 1030px) {
+  header .container-flex {
+    width: 100vh;
+  }
+}
 .logo {
   margin-right: 80px;
 }
@@ -557,6 +566,7 @@ header .container-flex {
   border: 1px solid #BDBCBC;
   border-radius: 10%;
   margin-right: 40px;
+  cursor: pointer;
 }
 
 textarea, input {
