@@ -1,0 +1,27 @@
+// COLORS //
+
+$grey: #7F7F7F;
+$lightgrey: #BDBCBC;
+$ultralightgrey: #F2F1F0;
+
+// FONTS //
+
+body{
+    font-family:  'Open Sans', sans-serif;
+    background-color: $ultralightgrey;
+}
+
+.resume{
+    color: $lightgrey;
+}
+
+.resume h2{
+    font-size: 1.2rem;
+    color: $grey;
+}
+
+.resume p{
+    font-size: 0.8rem;
+    line-height: 15px;
+}
+
