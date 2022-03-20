@@ -14,8 +14,7 @@ header .container-flex{
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
 
 .logo{
@@ -47,19 +46,27 @@ textarea{
     position: relative;
     border: 1px solid $lightgrey;
     border-right: none;
+    outline: none;
 }
 
 input{
     margin-left: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 0;
     position: absolute;  
     border: 1px solid $lightgrey;
     border-left: none;
+    background-image: url(../../public/img/icons/search.png);
+    background-repeat: no-repeat;
+    background-position: 8px;
+    width: 34px;
+    font-display: none;
+    font-size: 0;
+    
 }
 
 .search{    
-    height: 30px;
+    height: 30px;   
 }
 
 .user{
