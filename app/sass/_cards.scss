@@ -1,8 +1,21 @@
 .card{
-    width: 240px;    
+    width: 250px;    
     background-color: white;     
     box-shadow: 0px 0px 5px $lightgrey;  
     border-radius: 2%;
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .card{
+        width: 320px;    
+        background-color: white;     
+        box-shadow: 0px 0px 5px $lightgrey;  
+        border-radius: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 .top{
@@ -66,16 +79,24 @@
 }
 
 .size1 {
-    height: 366px;
+    height: 370px;
     grid-row: span 9;
 }
 
 .size2 {
-    height: 455px;
+    height: 460px;
     grid-row: span 11;
 }
 
 .size3 {
-    height: 530px;
+    height: 540px;
     grid-row: span 13;
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .size1, .size2, .size3 {
+        height: 100%;
+    }
+
 }

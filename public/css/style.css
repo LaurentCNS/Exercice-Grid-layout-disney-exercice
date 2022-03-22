@@ -498,6 +498,7 @@ body {
 
 .container-flex {
   display: flex;
+  justify-content: center;
 }
 
 #menu .container-flex {
@@ -518,6 +519,14 @@ main {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 1030px) {
+  #menu {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .container-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -525,12 +534,19 @@ main {
   grid-auto-flow: row;
 }
 
+@media only screen and (max-width: 1030px) {
+  .container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 header {
-  width: 100%;
   height: 100px;
   background-color: white;
   box-shadow: 0 0 5px #BDBCBC;
   display: flex;
+  justify-content: space-around;
 }
 header h1 {
   display: none;
@@ -550,7 +566,12 @@ header .container-flex {
 
 @media only screen and (max-width: 1030px) {
   header .container-flex {
-    width: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .logo {
@@ -569,6 +590,11 @@ header .container-flex {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1030px) {
+  .burger {
+    order: -3;
+  }
+}
 textarea, input {
   height: 30px;
   background-color: #f8f8f8;
@@ -586,6 +612,11 @@ textarea {
   outline: none;
 }
 
+@media only screen and (max-width: 1030px) {
+  textarea {
+    display: none;
+  }
+}
 input {
   margin-left: 0;
   box-sizing: content-box;
@@ -601,6 +632,12 @@ input {
   font-size: 0;
 }
 
+@media only screen and (max-width: 1030px) {
+  input {
+    border: 1px solid #BDBCBC;
+    position: static;
+  }
+}
 .search {
   height: 30px;
 }
@@ -614,13 +651,28 @@ header p {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 1030px) {
+  .user, header p {
+    display: none;
+  }
+}
 .card {
-  width: 240px;
+  width: 250px;
   background-color: white;
   box-shadow: 0px 0px 5px #BDBCBC;
   border-radius: 2%;
 }
 
+@media only screen and (max-width: 1030px) {
+  .card {
+    width: 320px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #BDBCBC;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .top {
   border-bottom: solid 1px #BDBCBC;
 }
@@ -682,20 +734,25 @@ header p {
 }
 
 .size1 {
-  height: 366px;
+  height: 370px;
   grid-row: span 9;
 }
 
 .size2 {
-  height: 455px;
+  height: 460px;
   grid-row: span 11;
 }
 
 .size3 {
-  height: 530px;
+  height: 540px;
   grid-row: span 13;
 }
 
+@media only screen and (max-width: 1030px) {
+  .size1, .size2, .size3 {
+    height: 100%;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;

@@ -1,11 +1,12 @@
 header{
-    width: 100%;
+    
     height: 100px;
     background-color: white;
     box-shadow: 0 0 5px $lightgrey;
     h1 { display: none;}
-    label { display : none; }
+    label { display : none; }  
     display: flex;
+    justify-content: space-around;
 }
 
 header .container-flex{    
@@ -17,13 +18,16 @@ header .container-flex{
     margin-right: auto;    
 }
 
-@media only screen and ( max-width: 1030px) {
+@media only screen and (max-width: 1030px) {
 
-  header .container-flex {
-width: 100vh;
-  }
-    
-
+    header .container-flex{    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;    
+    }
 
 }
 
@@ -41,6 +45,13 @@ width: 100vh;
     border-radius: 10%;
     margin-right: 40px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .burger{        
+        order: -3;
+    }
 
 }
 
@@ -61,6 +72,14 @@ textarea{
     outline: none;
 }
 
+@media only screen and (max-width: 1030px) {
+
+    textarea{
+        display: none;
+    }
+
+}
+
 input{
     margin-left: 0;
     box-sizing: content-box;
@@ -73,8 +92,17 @@ input{
     background-position: 8px;
     width: 34px;
     font-display: none;
-    font-size: 0;
+    font-size: 0;    
+}
+
+@media only screen and (max-width: 1030px) {
+
     
+input{     
+    border: 1px solid $lightgrey;
+    position: static;
+}
+
 }
 
 .search{    
@@ -88,5 +116,13 @@ input{
 
 header p{
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .user,header p{
+        display: none;
+    }
+
 }
 
